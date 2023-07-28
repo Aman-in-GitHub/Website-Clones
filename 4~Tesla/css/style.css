@@ -1,0 +1,505 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark light;
+  background: white;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cc0000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cf3131;
+}
+
+@supports (scrollbar-color: #cc0000 black) {
+  * {
+    scrollbar-color: #cc0000 black;
+  }
+}
+
+h1::selection,
+p::selection,
+a::selection {
+  background-color: #cc0000;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #848484;
+}
+
+.btn {
+  background-color: #1c1c1c;
+  padding: 0.4em 3.5em;
+  color: white;
+  border: 2px solid #353634;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #252525;
+}
+
+.primary {
+  background-color: white;
+  padding: 0.4em 3.5em;
+  color: #1c1c1c;
+  border: 2px solid #ccc;
+}
+
+.end-btn:hover {
+  background-color: #252525;
+}
+
+.primary:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+.main-btn:hover {
+  transform: scale(1.06);
+}
+
+nav {
+  display: grid;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  grid-template-columns: auto 1fr auto;
+  padding: 1em 1em;
+  z-index: 5;
+}
+
+nav a {
+  padding: 0.3em 0.8em;
+  transition: 0.4s ease;
+  border-radius: 5px;
+}
+
+nav a:hover,
+.center a:first-child:hover,
+.right a:first-child:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+nav a:first-child:hover {
+  background: transparent;
+}
+
+nav .center {
+  text-align: center;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+nav .right {
+  text-align: right;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+#open-side {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+#open-side:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav a svg {
+  width: 10rem;
+  color: #1c1c1c;
+  transition: 0.5s ease;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+nav a svg:hover {
+  background: transparent;
+  color: #cc0000;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
+  z-index: 9;
+}
+
+aside {
+  background: #fff;
+  position: fixed;
+  top: 0%;
+  right: -100%;
+  width: 30%;
+  height: 100vh;
+  z-index: 10;
+  padding: 4em 3em;
+  transition: right 0.4s ease;
+}
+
+aside .close {
+  position: absolute;
+  top: 0.5em;
+  right: 1.5em;
+  background: transparent;
+  border: 0;
+  color: black;
+  font-size: 1.5em;
+  padding: 0 0.3em;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+aside .close:hover {
+  transform: scale(1.1);
+}
+
+aside a {
+  display: block;
+  font-size: 0.9em;
+  padding: 0.5em 0;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+aside a:hover {
+  opacity: 0.6;
+}
+
+.show-blur {
+  display: block;
+}
+
+.show {
+  right: 0%;
+}
+
+header {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+header p {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+header a {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+header .page-content {
+  color: white;
+}
+
+.page-content {
+  padding: 15vh 0;
+  text-align: center;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+  grid-template-rows: min-content auto min-content;
+  color: black;
+}
+
+.page-content h1 {
+  font-size: 2.3rem;
+}
+
+.page-content p {
+  font-size: 1.2rem;
+}
+
+.page-content a {
+  text-decoration: underline;
+}
+
+.page-content .buttons a {
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  display: block;
+}
+
+.page-content .buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 40rem;
+  margin: 0 auto;
+  padding: 0 2em;
+  gap: 2em;
+}
+
+.main-btn {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 0.4em 3.5em;
+  font-weight: 600;
+  border: 3px solid white;
+  max-width: 40rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: 1s ease;
+}
+
+.end-btn {
+  text-decoration: none;
+  display: block;
+  color: white;
+  background-color: #1c1c1c;
+  padding: 0.4em 3.5em;
+  font-weight: 600;
+  border: 3px solid white;
+  max-width: 40rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: 0.3s ease;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100vh;
+  min-width: 100%;
+  z-index: -1;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+
+article {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.page-content:last-child {
+  height: 90vh;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  transform: translateY(-5em);
+}
+
+footer a {
+  color: #999;
+  padding: 0 1em;
+}
+
+@media (max-width: 1200px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .page-content .buttons {
+    grid-template-columns: 1fr;
+    max-width: 30rem;
+    gap: 1em;
+  }
+
+  aside {
+    width: 40%;
+  }
+
+  footer a {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 100svh;
+  }
+
+  section {
+    height: 100svh;
+  }
+
+  aside {
+    width: 60%;
+  }
+
+  aside a {
+    font-size: 0.8em;
+  }
+
+  .page-content {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+  }
+
+  .page-content h1 {
+    font-size: 2rem;
+  }
+
+  .page-content p {
+    font-size: 1.1rem;
+  }
+
+  .page-content .buttons {
+    max-width: 20rem;
+  }
+
+  footer {
+    transform: translateY(-6em);
+  }
+
+  footer a {
+    font-size: 0.4rem;
+  }
+}
+
+@media (max-width: 350px) {
+  nav a svg {
+    width: 5rem;
+  }
+
+  #open-side {
+    font-size: 0.8rem;
+    padding: 0.3em 0.5em;
+  }
+
+  header .page-content h1 {
+    font-size: 1.1rem;
+  }
+
+  header .page-content p {
+    font-size: 0.7rem;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .page-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .page-content p {
+    font-size: 0.9rem;
+  }
+
+  .page-content .buttons a {
+    font-size: 0.8rem;
+  }
+
+  .page-content .buttons {
+    max-width: 17rem;
+  }
+
+  .main-btn {
+    padding: 0.3em 1.5em;
+  }
+
+  .end-btn {
+    padding: 0.3em 1.5em;
+  }
+
+  footer a {
+    font-size: 0.3rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .page-content .buttons {
+    max-width: 13rem;
+  }
+
+  .page-content .buttons a {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-height: 720px) {
+  aside {
+    padding: 2em 1.5em;
+  }
+
+  aside a {
+    font-size: 0.9em;
+    padding: 0.4em 0;
+  }
+}
+
+@media (max-height: 650px) {
+  aside {
+    padding: 1em 0.8em;
+  }
+
+  aside .close {
+    position: absolute;
+    top: 0.1em;
+    right: 1.5em;
+    background: transparent;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  aside a {
+    font-size: 0.7em;
+    padding: 0.3em 0;
+  }
+}
+
+@media (max-height: 450px) {
+  aside {
+    padding: 1em 0.8em;
+  }
+
+  aside a {
+    font-size: 0.5em;
+    padding: 0.3em 0;
+  }
+}
