@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/starbucks-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @font-face {
+        font-family: SoDoSans;
+        src: url("SoDoSans-SemiBold.ttf");
+      }
+
+      @font-face {
+        font-family: SoDoBold;
+        src: url("SoDoSans-Bold.ttf");
+      }
+
+      @font-face {
+        font-family: SoDoLight;
+        src: url("SoDoSans-Light.ttf");
+      }
+
+      @font-face {
+        font-family: SoDoRegular;
+        src: url("SoDoSans-Regular.ttf");
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Starbucks Clone</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href=""> <img src="img/logo.png" alt="Starbucks Logo" /></a>
+      </div>
+      <div class="left-menu">
+        <ul class="nav1">
+          <li><a href="">Menu</a></li>
+          <li><a href="">Rewards</a></li>
+          <li><a href="">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="right-menu">
+        <ul class="nav2">
+          <li><i class="fa-solid fa-location-dot"></i></li>
+          <li>
+            <a href="" class="hover-green">Find a store</a>
+          </li>
+          <li><a href="" class="btn btn-light">Sign in</a></li>
+          <li><a href="" class="btn btn-dark">Join now</a></li>
+        </ul>
+      </div>
+
+      <button id="toggler" class="mob-btn">
+        <div class="ham-1"></div>
+        <div class="ham-2"></div>
+        <div class="ham-3"></div>
+      </button>
+    </nav>
+
+    <div class="backdrop"></div>
+
+    <div class="section-grid" style="color: white">
+      <section class="text grid-1 order-2">
+        <h1 class="sodo-sans">Find your adventure</h1>
+        <p>
+          Starbucks® Summer Game is here! Play for your chance to win—more than
+          10 million prizes are up for grabs!*
+        </p>
+        <a href="">Play Now</a>
+      </section>
+
+      <section class="order-1">
+        <img src="img/grid-1.jpg" alt="" />
+      </section>
+    </div>
+
+    <div class="section-grid">
+      <section>
+        <img src="img/grid-2.webp" alt="" />
+      </section>
+
+      <section class="text grid-2">
+        <h1>For your enjoy-mint</h1>
+        <p>
+          Hooray for our newest cooler-than-cool Chocolate Java Mint
+          Frappuccino® blended beverage.
+        </p>
+        <a href="" class="grid-drk-btn">Order Now</a>
+      </section>
+    </div>
+
+    <div class="section-grid">
+      <section>
+        <img src="img/grid-3.jpg" alt="" />
+      </section>
+
+      <section class="text grid-3">
+        <h1>Macadamia just dropped</h1>
+        <p>
+          Introducing the White Chocolate Macadamia Cream Cold Brew with toasted
+          cookie crumbles.
+        </p>
+        <a href="" class="grid-drk-btn">Order Now</a>
+      </section>
+    </div>
+
+    <div class="section-grid">
+      <section>
+        <img src="img/grid-4.webp" alt="" />
+      </section>
+
+      <section class="text grid-4">
+        <h1>Sweetest of the hive</h1>
+        <p>
+          Buzzing into the café, an adorable new Bumblebee Cake Pop dipped in
+          chocolaty icing.
+        </p>
+        <a href="" class="grid-drk-btn">Order Now</a>
+      </section>
+    </div>
+
+    <div class="advert">
+      <p>
+        *NO PURCHASE NECESSARY. Participating stores only. Starbucks Partners
+        (employees) are not eligible to win prizes. Ends 6/18/23. To play and
+        for Official Rules visit starbuckssummergame.com. Entrants can receive a
+        maximum of 2 plays per day, plus, bonus opportunities to earn additional
+        plays.
+      </p>
+    </div>
+
+    <section class="links">
+      <div id="about-us" class="about link-flex">
+        <h3>About Us</h3>
+        <a href="">Our Company</a>
+        <a href="">Our Coffee</a>
+        <a href="">Stories and News</a>
+        <a href="">Starbucks Archive</a>
+        <a href="">Investor Relations</a>
+        <a href="">Customer Service</a>
+      </div>
+
+      <div id="about-section" class="down">
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </div>
+
+      <div id="careers" class="career link-flex">
+        <h3>Careers</h3>
+        <a href="">Culture Values</a>
+        <a href="">Inclusion,Diversity and Equity</a>
+        <a href="">College Achievement Plan</a>
+        <a href="">Alumni Community</a>
+        <a href="">U.S.Careers</a>
+        <a href="">International Careers</a>
+      </div>
+
+      <div id="career-section" class="down">
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </div>
+
+      <div id="social-impact" class="impact link-flex">
+        <h3>Social Impact</h3>
+        <a href="">People</a>
+        <a href="">Planet</a>
+        <a href="">Environmental and Social Impact Reporting</a>
+      </div>
+
+      <div id="impact-section" class="down">
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </div>
+
+      <div id="business-partner" class="partner link-flex">
+        <h3>For Business Partners</h3>
+        <a href="">Landlord Support Partners</a>
+        <a href="">Suppliers</a>
+        <a href="">Corporate Gift Card Sales</a>
+        <a href="">Office and Foodservice Coffee</a>
+      </div>
+
+      <div id="business-section" class="down">
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </div>
+
+      <div id="order-pickup" class="pickup link-flex">
+        <h3>Order and Pickup</h3>
+        <a href="">Order on the App</a>
+        <a href="">Order on the Web</a>
+        <a href="">Delivery</a>
+        <a href="">Order and Pickup Options</a>
+        <a href="">Explore and Find Coffee for Home</a>
+      </div>
+
+      <div id="order-section" class="down">
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <footer>
+      <div class="icons">
+        <i class="fa-brands fa-spotify"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="foot-content">
+        <a>Privacy Notice</a>
+        <span class="hide">|</span>
+        <a>Terms of Use</a>
+        <span class="hide">|</span>
+        <a>Do Not Share My Personal Information</a>
+        <span class="hide">|</span>
+        <a>CA Supply Chain Act</a>
+        <span class="hide">|</span>
+        <a>Cookie Preferences</a>
+      </div>
+      <p>© 2023 Starbucks Coffee Company. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

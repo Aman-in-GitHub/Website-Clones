@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  h1::selection,
+  h2::selection,
+  h3::selection,
+  p::selection,
+  span::selection,
+  a::selection,
+  button::selection,
+  li::selection {
+    color: #1ce783;
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0b0c0f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #1ce783;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #6bf4b0;
+  }
+
+  @supports (scrollbar-color: #1ce783 #0b0c0f) {
+    * {
+      scrollbar-color: #1ce783 #0b0c0f;
+    }
+  }
+
+  .active {
+    display: block;
+  }
+}

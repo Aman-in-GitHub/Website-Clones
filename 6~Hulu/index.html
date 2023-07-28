@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      
+     @font-face {
+     font-family: GRAPHIK;
+     src: url("GRAPHIKREGULAR.OTF");
+    }
+
+     @font-face {
+      font-family: GRAPHIK-BOLD;
+      src: url("GraphikBold.otf");
+    }
+
+    </style>
+    <link rel="stylesheet" href="css/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/hulu-favicon.ico" type="image/x-icon" />
+    <title>Hulu Clone</title>
+  </head>
+  <body class="bg-[#0B0C0F] font-GRAPHIK">
+    <header
+      class="bg-[url('../img/phone-bg.jpg')] dark:bg-[url('../img/dark-bg-small.png')] bg-[center center] bg-no-repeat bg-cover w-full md:bg-[url('../img/tab-bg.jpg')] lg:bg-[url('../img/full-bg.jpg')]
+      dark:md:bg-[url('../img/dark-bg-medium.png')] dark:lg:bg-[url('../img/dark-bg-big.png')] shadow-home"
+    >
+    
+      <nav class="flex justify-between px-6 py-6 md:px-10">
+        <svg
+          viewBox="0 -2 61 24"
+          height="24"
+          width="61"
+          role="img"
+          aria-labelledby="logoTitle"
+          fill="#1CE783"
+        >
+          <title id="logoTitle">hulu</title>
+          <path
+            d="M9.57046613 6.24096927h-3.1015504c-1.0875017 0-1.63435327.29263768-1.63435327.29263768V0H0v20h4.83456246v-8.0704467c0-.7137436.58067743-1.29171 1.2958127-1.29171h2.81374862c.7162628 0 1.29524892.5779664 1.29524892 1.29171V20h4.8359719v-8.6950777c0-3.65670596-2.4444829-5.06395303-5.50487847-5.06395303zm46.48012787 0v8.06932223c0 .714868-.579268 1.2931156-1.294967 1.2931156h-2.8134668c-.7162628 0-1.2952489-.5782476-1.2952489-1.2931156V6.24096927h-4.8368175V14.712844c0 3.4627386 2.2220777 5.287156 5.5062878 5.287156h4.7347762v-.0247379c3.0245965 0 4.8354081-2.1465718 4.8354081-5.2624181V6.24096927H56.050594zM28.7728487 14.3102915c0 .714868-.5798318 1.2931156-1.2955308 1.2931156h-2.8137486c-.7162628 0-1.2955308-.5782476-1.2955308-1.2931156V6.24096927h-4.8359719V14.712844c0 3.4627386 2.2220778 5.287156 5.506006 5.287156h4.7347761v-.0247379c3.0248785 0 4.8359719-2.1465718 4.8359719-5.2624181V6.24096927h-4.8359719v8.06932223zM37.294431 20h4.8365357V0H37.294431v20z"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+        
+        <a
+          href=""
+          class="font-bold text-gray-400 hover:bg-[#323843] hover:text-white transition-all duration-300 items-center px-4 py-2 rounded-lg -mt-2 hidden lg:flex"
+          >LOG IN</a
+        >
+        <button
+          class="px-4 py-4 space-y-[3px] bg-[#323843] -mt-2 rounded-lg h-fit hover:bg-gray-700 lg:hidden relative mob-btn"
+        >
+          <div class="w-3 h-px bg-white button-1"></div>
+          <div class="w-3 h-px bg-white button-2"></div>
+          <div class="w-3 h-px bg-white button-3"></div>
+
+          <div
+            class="absolute flex flex-col w-[15rem] text-gray-400 top-[110%] right-2 bg-[#323843] p-1 gap-1 rounded-md font-bold hidden hidden-content"
+          >
+            <a
+              href=""
+              class="bg-[#323843] py-2 hover:bg-gray-500 transition-colors rounded-md hover:text-white"
+              >Get the Hulu app</a
+            >
+            <a
+              href=""
+              class="bg-[#323843] py-2 hover:bg-gray-500 transition-colors rounded-md hover:text-white"
+              >LOG IN</a
+            >
+            <a
+              href=""
+              class="bg-[#0B0C0F] py-2 rounded-md transition-colors hover:bg-[#0B0C0F99] text-white"
+              >GET THIS DEAL</a
+            >
+          </div>
+        </button>
+      </nav>
+
+      <div
+        class="w-[90%] md:w-[80%] lg:w-[50%] mx-auto my-8 text-white flex flex-col justify-center items-center"
+      >
+        <img src="img/subscription.png" alt="" class="w-[80%] max-w-[34rem]" />
+        <p
+          class="mt-1 text-lg font-semibold text-center md:text-2xl lg:text-[1.75rem]"
+        >
+          Save 74% per month for 3 months on Hulu (With Ads).
+          <br />
+          <span class="font-normal">Deal ends 5/27/23.</span>
+        </p>
+
+        <button
+          class="mt-6 bg-[#1CE783] text-sm text-black font-bold py-3 w-full rounded-[5px] transition-opacity duration-500 hover:opacity-60 max-w-[42rem]"
+        >
+          GET THIS DEAL
+        </button>
+        
+        <p class="mt-3 text-[.62rem] leading-[.6rem] opacity-80 max-w-[41rem]">
+          Savings compared to current regular monthly price. Offer for Hulu
+          (With Ads) plan only: $2/month for 3 months, then auto-renews at
+          $7.99/month or then-current regular monthly price. Ends 11:59 PM PT on
+          5/27/23. Cancel anytime, effective at the end of your billing period.
+          No refunds or credits for partial months. New and eligible returning
+          subscribers (who have not been Hulu subscribers in the past 1 month)
+          only; Disney+ Basic (With Ads) subscribers are not eligible.
+          <span class="font-medium underline cursor-pointer"
+            >Additional terms apply.</span
+          >
+        </p>
+      </div>
+      
+      <div
+        class="relative flex flex-col items-center justify-center w-full py-8 isolate after:bg-[rgba(0,0,0,.6)] after:w-full after:h-full after:top-0 after:left-0 after:absolute after:-z-10 md:flex-row px-14 mt-10"
+      >
+        <img src="img/hulu+disney.png" alt="" class="w-[12rem] lg:w-[24rem]" />
+        <p
+          class="flex-1 w-4/5 text-sm text-center text-white md:text-xl lg:text-2xl md:text-left md:pl-12 md:pr-12 lg:w-1/4 lg:mr-12"
+        >
+          Get Hulu (With Ads) for $2/mo for 3 mos & add Disney+ (With Ads) for
+          just $2/mo more.
+          <br />
+          <span class="text-xs">Regular monthly price after. Ends 5/27.</span>
+        </p>
+
+        <div>
+          <button
+            class="mt-4 bg-[#1CE783] text-sm text-black font-bold py-3 w-[10rem] rounded-[5px] transition-opacity duration-200 hover:opacity-60 relative"
+          >
+            GET THEM BOTH
+          </button>
+          <p
+            class="mt-3 text-[.70rem] leading-[.6rem] text-gray-100 opacity-80 cursor-pointer underline text-center"
+          >
+            Terms apply
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-[#0B0C0F] text-white">
+      
+      <div class="py-12 w-[90%] md:w-[75%] mx-auto">
+        <h3 class="text-center text-[#1CE783] text-xs font-semibold lg:text-base lg:mb-8">
+          INCLUDED IN ALL PLANS
+        </h3>
+        <h1 class="my-3 text-3xl font-bold text-center lg:text-5xl font-GRAPHIK-BOLD">All The TV You Love</h1>
+        <h2 class="text-base font-medium text-center lg:text-xl lg:w-4/5 lg:mx-auto lg:mt-8">
+          Watch full seasons of exclusively streaming series, current-season
+          episodes, hit movies, Hulu Originals, kids shows, and more.
+        </h2>
+      </div>
+
+      <div
+        class="w-[92%] md:w-[80%] mx-auto grid grid-cols-2 gap-5 py-4 lg:grid-cols-4"
+      >
+        <div class="relative">
+          <img src="img/grid-1.jpg" alt="" class="relative cursor-pointer">
+          <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.4)]">
+          </div>
+        </img>
+          <div class="absolute top-5 left-5">
+            <a href="" class="text-base font-semibold">Past & Current Seasons</a>
+            <br />
+            <a href="" class="text-xl font-semibold leading-8">TV Shows</a>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img src="img/grid-2.jpg" alt="" class="relative cursor-pointer">
+          <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.4)]">
+          </div>
+        </img>
+          <div class="absolute top-5 left-5">
+            <a href="" class="text-base font-semibold">New & Classic</a>
+            <br />
+            <a href="" class="text-xl font-semibold leading-8">Movies</a>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img src="img/grid-3.jpg" alt="" class="relative cursor-pointer">
+          <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.4)]">
+          </div>
+        </img>
+          <div class="absolute top-5 left-5">
+            <a href="" class="text-base font-semibold">Groundbreaking</a>
+            <br />
+            <a href="" class="text-xl font-semibold leading-8"
+              >HULU Originals</a
+            >
+          </div>
+        </div>
+
+        <div class="relative">
+          <img src="img/grid-4.jpg" alt="" class="relative cursor-pointer">
+          <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.4)]">
+          </div>
+        </img>
+          <div class="absolute top-5 left-5">
+            <a href="" class="text-base font-semibold">Add-on</a>
+            <br />
+            <a href="" class="text-xl font-semibold leading-8">Premiums</a>
+          </div>  
+          <p class="text-[.6rem] absolute opacity-80 mt-2">
+            Premium network add-ons available for an additional cost
+          </p>  
+        </div>
+      </div>
+
+      <div class="py-12 w-[90%] md:w-[75%] mx-auto lg:mt-[10em] mt-[5em]">
+        <h3 class="text-center text-[#1CE783] text-xs font-semibold lg:text-base">
+          HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+, ALL WITH ADS
+        </h3>
+        <h1 class="my-3 mb-5 text-3xl font-bold text-center lg:text-5xl lg:my-5 lg:mb-7 font-GRAPHIK-BOLD">
+          Live TV Makes It Better
+        </h1>
+        <h2 class="w-full text-base font-medium text-center lg:text-xl lg:w-4/5 lg:mx-auto">
+          Make the switch from cable. Get 85+ top channels on Hulu (With Ads) +
+          Live TV with your favorite live sports, news, and events - plus the
+          entire Hulu streaming library. With Unlimited DVR, store Live TV
+          recordings for up to nine months and fast-forward through your DVR
+          content. Access endless entertainment with Disney+ and live sports
+          with ESPN+.
+        </h2>
+        <p class="text-[.6rem] my-4 opacity-80 w-full mx-auto lg:w-4/5">
+          Regional restrictions, blackouts and Live TV terms apply. Access
+          content from each service separately. Location data required to watch
+          certain content. Unlimited DVR recording is not available for
+          on-demand shows.
+        </p>
+        <p class="text-sm font-bold text-center underline cursor-pointer">
+          VIEW CHANNELS IN YOUR AREA →
+        </p>
+        <div class="pt-8 text-center">
+          <i
+            class="text-xl cursor-pointer fa-solid fa-chevron-down animate-bouncing-arrow"
+          ></i>
+        </div>
+      </div>
+    </main>
+
+    <section class="bg-[url('../img/billboard-mobile.jpg')] lg:bg-[url('../img/billboard-bg.jpg')] h-screen bg-[center center] bg-no-repeat bg-cover px-8 py-4 text-white lg:flex flex-col lg:pl-[15em] lg:justify-center billy"
+    >
+      
+      <nav class="relative flex items-center justify-between w-[18rem] mx-auto md:text-[.65rem] lg:mx-0 md:gap-2 my-4 text-[.5rem] font-bold mb-32 lg:mb-16">
+        <a href="#" class="w-[6rem] text-center scrolling-link">LIVE SPORTS</a>
+        <a href="#" class="w-[6rem] text-center scrolling-link">BREAKING NEWS</a>
+        <a href="#" class="w-[6rem] text-center scrolling-link">BIGGEST EVENTS</a>
+        <div class="absolute w-[6rem] h-1 lg:h-[0.35rem] bg-white top-[140%] left-0 scroller transition-transform duration-300">
+        </div>
+      </nav>
+      
+        <div class="hidden lg:min-w-[30rem] lg:w-1/3 animate-fade-in-up live-sports active article">
+            <h1 class="mb-2 text-4xl font-bold text-center lg:text-left lg:mb-4 font-GRAPHIK-BOLD">Live Sports</h1>
+            <p class="mb-8 font-semibold text-center lg:text-left">Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.</p>
+            <div class="grid w-full grid-cols-4 place-items-center lg:place-items-start">
+              <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/cbs.png')] bg-[center] bg-no-repeat bg-contain"></span>
+              <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/espn.png')] bg-[center] bg-no-repeat bg-contain"></span>
+              <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/fs1.svg')] bg-[center] bg-no-repeat bg-contain"></span>
+              <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/nfl.png')] bg-[center] bg-no-repeat bg-contain"></span>      
+            </div>
+            <p class="mt-8 md:text-center text-[.6rem] lg:text-start">Live TV plan required. Regional restrictions, blackouts and additional terms. <span class="font-semibold underline">See details</span></p>
+        </div>
+
+        <div class="hidden lg:min-w-[30rem] lg:w-1/3 animate-fade-in-up breaking-news article">
+          <h1 class="mb-2 text-4xl font-bold text-center lg:text-left lg:mb-4 font-GRAPHIK-BOLD">Breaking News</h1>
+          <p class="mb-8 font-semibold text-center lg:text-left">Keep pace with what's going on locally and globally with trusted opinions from all the top news networks.</p>
+          <div class="grid w-full grid-cols-4 place-items-center lg:place-items-start">
+            <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/abc.png')] bg-[center] bg-no-repeat bg-contain"></span>
+            <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/cnn.svg')] bg-[center] bg-no-repeat bg-contain"></span>
+            <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/msnbc.png')] bg-[center] bg-no-repeat bg-contain"></span>
+            <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/fox-news.svg')] bg-[center] bg-no-repeat bg-contain"></span>      
+          </div>
+          <p class="mt-8 text-[.6rem] md:text-center lg:text-start">Live TV plan required. Regional restrictions, blackouts and additional terms. <span class="font-semibold underline">See details</span></p>
+      </div>
+
+      <div class="hidden lg:min-w-[30rem] lg:w-1/3 animate-fade-in-up biggest-events article">
+        <h1 class="mb-2 text-4xl font-bold text-center lg:text-left lg:mb-4 font-GRAPHIK-BOLD">Biggest Events</h1>
+        <p class="mb-8 font-semibold text-center lg:text-left">Spectacular, can't-miss moments like the Olympics, Grammys®, Oscars®, Emmys®, and more.</p>
+        <div class="grid w-full grid-cols-4 place-items-center lg:place-items-start">
+          <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/emmys.png')] bg-[center] bg-no-repeat bg-contain"></span>
+          <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/golden-globe.png')] bg-[center] bg-no-repeat bg-contain"></span>
+          <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/grammy.png')] bg-[center] bg-no-repeat bg-contain"></span>
+          <span class="w-16 h-16 bg-white rounded-[50%] bg-[url('../img/oscars.png')] bg-[center] bg-no-repeat bg-contain"></span>      
+        </div>
+        <p class="mt-8 text-[.6rem] md:text-center lg:text-start">Live TV plan required. Regional restrictions, blackouts and additional terms. <span class="font-semibold underline">See details</span></p>
+    </div>
+    </section>
+
+    <section class="bg-[#0B0C0F] lg:w-[70%] md:w-[80%] md:mx-auto px-2">
+      <div class="py-8 text-center text-white lg:mt-14 lg:py-12">
+        <h1 class="text-3xl font-bold lg:text-5xl font-GRAPHIK-BOLD">Select Your Plan</h1>
+        <p class="pt-4 text-lg">No hidden fees, equipment rentals, or installation appointments.</p>
+        <p class="text-xl font-bold">Switch plans or cancel anytime.**</p>
+      </div>
+      <div class="h-px bg-slate-200"></div>
+    </section>
+    
+    <section class="text-white lg:w-[70%] md:w-[80%] md:mx-auto mb-14">
+    <div class="grid-cols-2 lg:grid bg-[#0B0C0F] lg:mx-auto lg:sticky lg:top-0">
+      <div class="grid grid-cols-2 gap-4 lg:items-center">
+        <div class="relative flex flex-col gap-2 py-8 text-center text-white">         
+          <p class="text-[1rem] font-bold">BASE PLANS</p>  
+          <span class="absolute right-0 flex items-center w-10 h-6 bg-gray-500 rounded-full cursor-pointer md:h-8 md:w-14 toggler">
+            <div class="w-6 h-6 md:w-9 md:h-9 rounded-[50%] bg-white toggle-btn"></div>
+          </span>
+          <img src="img/hulu.svg" alt="" class="w-[2.5rem] mt-[1.3rem] mx-auto">      
+        </div>
+        <div class="flex flex-col gap-4 py-8 text-white">       
+          <p class="text-[1rem] font-bold">BUNDLE / SAVE</p>
+          <img src="img/hulu+disney+espm.svg" alt="" class="w-[10rem] md:w-[12rem]">         
+        </div>
+
+      </div>
+      
+      <div class="h-px bg-slate-200 lg:hidden lg:mx-auto"></div>
+      
+      <div class="grid grid-cols-2 divide-x-2 lg:divide-x-0 bg-[#0B0C0F] lg:mx-auto sticky z-10">
+        <div class="flex flex-col gap-4 py-8 text-center text-white">
+          <p class="text-[.6rem] py-1 px-2 bg-green-400 w-fit text-black font-semibold
+           mx-auto rounded-xl lg:rounded-2xl lg:px-5 lg:py-2 ">NATIONAL STREAMING DAY</p>
+          <p class="text-[.7rem] font-extrabold text-[#ccc]">LIMITED-TIME DEAL</p>
+          <p class="text-[1rem] font-bold">Hulu (With Ads)</p>
+          <button class="py-2 mx-auto font-bold text-black w-[11rem] lg:w-[95%] transition-colors duration-200 bg-white rounded-sm hover:bg-gray-200">
+            $2/Mo. For 3 Mos.8
+          </button>
+        </div>
+        <div class="flex flex-col gap-4 py-8 text-center text-white lg:mt-[.4rem] z-10">
+          <p>&nbsp;</p>
+          <p class="text-[.7rem] font-extrabold text-[#ccc]">30 DAY FREE TRIAL</p>
+          <p class="text-[1rem] font-bold">Hulu (No Ads)</p>
+          <button class="mx-auto font-bold text-black bg-white w-[11rem] lg:w-[95%] py-2 rounded-sm transition-colors duration-200 hover:bg-gray-200">
+           $14.99/M0.
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-px bg-slate-200 lg:mx-auto"></div>
+
+      <div class="items-center justify-between px-1 py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">Monthly price</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p>$2/mo. for 3 mos., then $7.99/mo.*</p>
+          <p>$14.99/mo.</p>
+        </div>        
+      </div>
+
+      <div class="h-px bg-slate-200"></div> 
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">Streaming Library with tons of TV episodes and movies</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>        
+      </div>
+
+      <div class="h-px bg-slate-200"></div>    
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">Most new episodes the day after they air†</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>        
+      </div>
+
+      <div class="h-px bg-slate-200"></div>  
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">Watch on your favorite devices, including TV, laptop, phone, or tablet</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>    
+      </div>
+
+      <div class="h-px bg-slate-200"></div>    
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">Up to 6 user profilesUp to 6 user profiles</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>  
+      </div>
+
+      <div class="h-px bg-slate-200"></div>  
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">Watch on 2 different screens at the same time</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>  
+      </div>
+
+      <div class="h-px bg-slate-200"></div>  
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">No ads in streaming library</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">          
+          <p><i class="fa-sharp fa-solid fa-minus"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>   
+      </div>
+
+      <div class="h-px bg-slate-200"></div>  
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">Download and watch</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">       
+          <p><i class="fa-sharp fa-solid fa-minus"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div> 
+      </div>
+      
+      <div class="h-px bg-slate-200"></div>  
+
+      <div class="px-2 pt-2 pb-16 lg:px-0">
+        <h1 class="text-xs text-center lg:text-start">
+          *Offer for Hulu (With Ads) plan only: $2/month for 3 months, then auto-renews at $7.99/month or then-current regular monthly price. Ends 11:59 PM PT on 5/27/23. Cancel anytime, effective at the end of your billing period. No refunds or credits for partial months. New and eligible returning subscribers (who have not been Hulu subscribers in the past 1 month) only; Disney+ Basic (With Ads) subscribers are not eligible.
+          <span class="font-semibold text-blue-600 cursor-pointer">
+            Additional terms apply.
+          </span>
+          <br>
+            **Switches from Live TV to Hulu take effect as of the next billing cycle.
+            †For current-season shows in the streaming library only.
+        </h1>           
+      </div>
+
+      <div class="shown-add-ons">       
+        <div class="h-px bg-slate-200"></div> 
+        <div class="flex items-center justify-center gap-4 py-6 cursor-pointer show-add-ons">
+          <h1 class="text-3xl font-semibold">Show Add-ons</h1> 
+          <i class="text-3xl fa-solid fa-chevron-down arrowed"></i>
+        </div>
+        <div class="h-px bg-slate-200"></div> 
+      </div> 
+
+      <div class="overflow-hidden transition-all duration-200 max-h-0 add-ons">
+        <h1 class="my-4 text-3xl font-bold text-center lg:text-start">Available Add-ons</h1>
+       <p class="w-[18rem] mx-auto mb-10 text-center lg:mx-0 lg:text-start">Add-ons available at an additional cost.
+        Add them up after you sign up for Hulu.</p>
+
+        <div class="h-px bg-slate-200"></div> 
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">Max</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>        
+      </div>
+
+      <div class="h-px bg-slate-200"></div> 
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">CINEMAX</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>        
+      </div>
+
+      <div class="h-px bg-slate-200"></div>    
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">SHOWTIME</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>        
+      </div>
+
+      <div class="h-px bg-slate-200"></div>  
+
+      <div class="items-center justify-between py-2 lg:grid lg:grid-cols-3">
+        <h1 class="text-center lg:text-start">STARZ</h1>
+        <div class="grid grid-cols-2 py-4 text-center lg:col-span-2 md:divide-x lg:divide-x-0">
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+          <p><i class="fa-solid fa-check text-[#1CE783]"></i></p>
+        </div>    
+      </div>
+      <div class="h-px bg-slate-200"></div>
+      </div>
+
+      <div class="hidden hidden-add-ons">
+        <div class="h-px bg-slate-200"></div> 
+      <div class="flex items-center justify-center gap-4 py-6 cursor-pointer hide-add-ons">
+        <h1 class="text-3xl font-semibold">Hide Add-ons</h1> 
+        <i class="text-3xl rotate-180 fa-solid fa-chevron-down arrowed-up"></i>
+      </div>
+      <div class="h-px bg-slate-200"></div> 
+      </div>     
+    </section>
+
+    <footer class="px-6 py-12 text-black bg-white lg:px-32">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+        <div class="md:col-span-2">
+          
+          <div class="flex items-center justify-between cursor-pointer browse-section">
+            <h1 class="mb-4 text-sm font-semibold">BROWSE</h1>
+            <div class="md:hidden">
+              <i class="text-xl fa-solid fa-chevron-down link-arrow-1 md:hidden"></i>
+            </div>    
+          </div>
+         
+          <div class="hidden grid-cols-4 gap-4 text-sm text-gray-500 md:grid browse-links">     
+            <div class="flex flex-col gap-2">
+              <a href="">
+                Streaming Library
+              </a>
+                <a href="">
+                Live TV
+              </a>
+              <a href="">
+                Live News
+              </a>
+              <a href="">
+                Live Sports
+              </a>
+            </div>
+  
+            <div class="flex flex-col gap-2 mt-6 md:mt-0">
+              <a href="">
+                TV Shows
+              </a>
+                <a href="">
+                Movies
+              </a>
+              <a href="">
+                Originals
+              </a>
+              <a href="">
+                Networks
+              </a>
+              <a href="">
+                Kids
+              </a>
+              <a href="">
+                FX
+              </a>
+            </div>
+  
+            <div class="flex flex-col gap-2 mt-6 md:mt-0">
+              <a href="">
+                Max
+              </a>
+                <a href="">
+                Cinemax
+              </a>
+              <a href="">
+                Showtime
+              </a>
+              <a href="">
+                STARZ
+              </a>
+            </div>
+  
+            <div class="flex flex-col gap-2 mt-6 md:mt-0">
+              <a href="">
+                Disney Bundle Trio Basic
+              </a>
+                <a href="">
+                Disney Bundle Trio Premium
+              </a>
+              <a href="">
+                Disney Bundle Basic
+              </a>
+              <a href="">
+                Student Discount
+              </a>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="h-px bg-slate-200 md:hidden"></div> 
+  
+        <div>
+          <div class="flex items-center justify-between cursor-pointer help-section">
+            <h1 class="mb-4 text-sm font-semibold ">HELP</h1>
+            <div class="md:hidden">
+              <i class="text-xl fa-solid fa-chevron-down link-arrow-2 md:hidden"></i>
+            </div>    
+          </div>
+          <div class="hidden text-sm text-gray-500 md:block help-links">     
+            <div class="flex flex-col gap-2">
+              <a href="">
+                Account & Billing
+              </a>
+                <a href="">
+                Plans & Pricing
+              </a>
+              <a href="">
+                Supported Devices
+              </a>
+              <a href="">
+                Accessibility
+              </a>
+            </div>
+           </div>
+        </div>
+
+        <div class="h-px bg-slate-200 md:hidden"></div> 
+  
+        <div>
+          <div class="flex items-center justify-between cursor-pointer about-section">
+            <h1 class="mb-4 text-sm font-semibold">ABOUT US</h1>
+            <div class="md:hidden">
+              <i class="text-xl fa-solid fa-chevron-down link-arrow-3 md:hidden"></i>
+            </div>    
+          </div>
+          <div class="hidden text-sm text-gray-500 md:block about-links">     
+            <div class="flex flex-col gap-2">
+              <a href="">
+                Shop Hulu
+              </a>
+                <a href="">
+                Press
+              </a>
+              <a href="">
+                Jobs
+              </a>
+              <a href="">
+                Contact
+              </a>
+            </div>
+            </div>
+        </div>
+        <div class="h-px bg-slate-200 md:hidden"></div> 
+      </div>
+
+      <div class="hidden h-px mt-12 lg:mt-16 bg-slate-200 md:block"></div> 
+
+      <div class="py-8 space-x-4 text-2xl text-gray-500">
+        <i class="cursor-pointer fa-brands fa-facebook-f"></i>
+        <i class="cursor-pointer fa-brands fa-twitter"></i>
+        <i class="cursor-pointer fa-brands fa-youtube"></i>
+        <i class="cursor-pointer fa-brands fa-instagram"></i>
+      </div>
+
+      <div class="flex flex-wrap gap-6 text-xs text-gray-500">
+        <a href="" class="hidden font-semibold md:inline-block">© 2023 Hulu, LLC</a>
+        <a href="">About Ads</a>
+        <a href="">Subscriber Agreement</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Do Not Sell My Personal Information</a>
+        <a href="">Your California Privacy Rights</a>
+        <a href="">TV Parental Guidelines</a>
+        <a href="">Sitemap</a>
+        <a href="" class="font-semibold md:hidden">© 2023 Hulu, LLC</a>
+      </div>       
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
