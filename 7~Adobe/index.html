@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/adobe-favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/input.css" />
+    <title>Adobe Clone</title>
+  </head>
+  <body class="font-ADOBEREGULAR">
+    <header>
+      <nav
+        class="relative z-50 flex h-[9vh] items-center justify-between bg-white py-4"
+      >
+        <div class="flex items-center gap-10 ml-6 lg:ml-16">
+          <div
+            class="mob-btn flex h-fit cursor-pointer flex-col gap-[.3rem] lg:hidden"
+          >
+            <span
+              class="first-line block h-[0.12rem] w-[1.1rem] bg-gray-800"
+            ></span>
+            <span
+              class="second-line block h-[0.12rem] w-[1.1rem] bg-gray-800"
+            ></span>
+            <span
+              class="third-line block h-[0.12rem] w-[1.1rem] bg-gray-800"
+            ></span>
+          </div>
+
+          <div class="flex items-center">
+            <a href="" class="mr-[.6em] w-[1.6rem]">
+              <img src="img/adobe-favicon.png" alt="" class="w-full" />
+            </a>
+            <span class="mb-1 text-lg font-ADOBEBOLD text-primary">Adobe</span>
+          </div>
+        </div>
+
+        <ul
+          class="main-menu the-ul absolute left-[-100rem] top-full z-50 min-h-[91vh] w-[95%] bg-[#fafafa] py-4 lg:static lg:mx-8 lg:flex lg:h-full lg:w-full lg:items-center lg:bg-transparent"
+        >
+          <div
+            class="z-50 flex items-center mx-4 my-4 bg-white border rounded-sm lg:hidden"
+          >
+            <input
+              type="text"
+              class="w-full px-2 py-1 outline-none"
+              placeholder="Search"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass scale-x-[-1] cursor-pointer pl-3"
+            ></i>
+          </div>
+          <div class="flex">
+            <div class="hidden w-1 mr-2 bg-black sidebar-1 lg:hidden"></div>
+            <div class="w-full mx-4">
+              <li
+                class="flex items-center justify-between py-2 border-b cursor-pointer sidebar-title lg:border-0"
+              >
+                <a href="javascript: void(0)" class="diabled-links"
+                  >Creativity <span>& Design</span></a
+                >
+                <i
+                  class="text-sm duration-75 fa-solid fa-chevron-down downed-arrow arrow-1 lg:ml-1"
+                ></i>
+              </li>
+              <div
+                class="first-para para-item top-[100%] hidden pl-4 text-sm lg:absolute lg:bg-[#fafafa] lg:px-6 lg:py-4"
+              >
+                <li
+                  class="border-b py-2 duration-75 hover:bg-gray-100 hover:text-[#1473E6]"
+                >
+                  <a href="">What is Creative Cloud</a>
+                </li>
+                <li
+                  class="border-b py-2 duration-75 hover:bg-gray-100 hover:text-[#1473E6]"
+                >
+                  <a href="">Photographers</a>
+                </li>
+                <li
+                  class="border-b py-2 duration-75 hover:bg-gray-100 hover:text-[#1473E6]"
+                >
+                  <a href="">Students and teachers</a>
+                </li>
+                <li
+                  class="border-b py-2 duration-75 hover:bg-gray-100 hover:text-[#1473E6]"
+                >
+                  <a href="">Individuals</a>
+                </li>
+
+                <li
+                  class="border-b py-2 duration-75 hover:bg-gray-100 hover:text-[#1473E6]"
+                >
+                  <a href="">Small and medium business</a>
+                </li>
+                <li
+                  class="border-b py-2 duration-75 hover:bg-gray-100 hover:text-[#1473E6]"
+                >
+                  <a href="">Enterprise</a>
+                </li>
+                <li
+                  class="border-b py-2 duration-75 hover:bg-gray-100 hover:text-[#1473E6]"
+                >
+                  <a href="">Schools and Universities</a>
+                </li>
+
+                <li class="pt-4 pb-1">
+                  <a href="">
+                    <button
+                      class="mb-2 rounded-[100vmax] bg-[#1473E6] px-5 py-1 text-sm text-white duration-100 hover:opacity-80"
+                    >
+                      View Plans and Pricing
+                    </button>
+                  </a>
+                </li>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="hidden w-1 mr-2 bg-black sidebar-2 lg:hidden"></div>
+            <div class="w-full mx-4">
+              <li
+                class="flex items-center justify-between py-2 border-b cursor-pointer sidebar-title lg:border-0"
+              >
+                <a href="javascript: void(0)" class="diabled-links"
+                  >Pdf & E-signatures</a
+                >
+                <i
+                  class="text-sm duration-75 fa-solid fa-chevron-down downed-arrow arrow-2 lg:ml-1"
+                ></i>
+              </li>
+              <div
+                class="second-para para-item top-[100%] hidden pl-4 text-sm lg:absolute lg:bg-[#fafafa] lg:px-6 lg:py-4"
+              >
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Products</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Shop for</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Resources</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Online Tools</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="hidden w-1 mr-2 bg-black sidebar-3 lg:hidden"></div>
+            <div class="w-full mx-4">
+              <li
+                class="flex items-center justify-between py-2 border-b cursor-pointer sidebar-title lg:border-0"
+              >
+                <a href="javascript: void(0)" class="diabled-links"
+                  >Marketing & Commerce</a
+                >
+                <i
+                  class="text-sm duration-75 fa-solid fa-chevron-down downed-arrow arrow-3 lg:ml-1"
+                ></i>
+              </li>
+              <div
+                class="third-para para-item top-[100%] hidden pl-4 text-sm lg:absolute lg:bg-[#fafafa] lg:px-6 lg:py-4"
+              >
+                <li
+                  class="py-2 font-semibold hover:bg-gray-100 hover:text-[#1473E6]"
+                >
+                  <a href="">Adobe Experience Cloud</a>
+                </li>
+
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Solutions</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Products</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Artificial Intelligence</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Resources</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Support</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Events</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="hidden w-1 mr-2 bg-black sidebar-4 lg:hidden"></div>
+            <div class="w-full mx-4">
+              <li
+                class="flex items-center justify-between py-2 border-b cursor-pointer sidebar-title lg:border-0"
+              >
+                <a href="javascript: void(0)" class="diabled-links"
+                  >Help & Suppport</a
+                >
+                <i
+                  class="text-sm duration-75 fa-solid fa-chevron-down downed-arrow arrow-4 lg:ml-1"
+                ></i>
+              </li>
+              <div
+                class="fourth-para para-item top-[100%] hidden pl-4 text-sm lg:absolute lg:bg-[#fafafa] lg:px-6 lg:py-4"
+              >
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Help and support</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Common tasks</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+                <li
+                  class="flex items-center justify-between px-3 py-2 font-semibold border-b"
+                >
+                  <a href="">Learning resources</a>
+                  <i
+                    class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+                  ></i>
+                </li>
+              </div>
+            </div>
+          </div>
+        </ul>
+
+        <div class="items-center gap-4 mr-4 lg:mr-24 lg:flex">
+          <i
+            class="fa-solid fa-magnifying-glass hidden scale-x-[-1] cursor-pointer lg:block"
+          ></i>
+          <img
+            src="img/default-profile.png"
+            alt=""
+            class="w-8 cursor-pointer"
+          />
+          <div
+            class="relative hidden text-gray-500 cursor-pointer extra-content lg:block"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-grid-3x3-gap-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"
+              />
+            </svg>
+            <div
+              class="the-extra-content absolute right-0 top-[220%] z-50 hidden min-w-max bg-white"
+            >
+              <h1 class="py-2 text-xs text-center uppercase">
+                Web Apps and Services
+              </h1>
+              <i
+                class="absolute text-sm fa-solid fa-circle-info right-2 top-1"
+              ></i>
+
+              <div class="grid grid-cols-3 gap-4 px-4 py-4">
+                <img src="img/1.png" alt="" class="w-12" />
+                <img src="img/2.png" alt="" class="w-12" />
+                <img src="img/3.png" alt="" class="w-12" />
+                <img src="img/4.png" alt="" class="w-12" />
+                <img src="img/5.png" alt="" class="w-12" />
+                <img src="img/6.png" alt="" class="w-12" />
+                <img src="img/7.png" alt="" class="w-12" />
+                <img src="img/8.png" alt="" class="w-12" />
+                <img src="img/9.png" alt="" class="w-12" />
+                <img src="img/10.png" alt="" class="w-12" />
+                <img src="img/11.png" alt="" class="w-12" />
+                <img src="img/12.png" alt="" class="w-12" />
+              </div>
+
+              <h1 class="pb-4 text-xs text-center">More</h1>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+
+    <main>
+      <div class="lg:relative lg:h-screen lg:min-w-max lg:overflow-hidden">
+        <img src="img/mobile-bg.jpg" alt="" class="w-full md:hidden" />
+        <img
+          src="tab-img/tablet-bg.jpg"
+          alt=""
+          class="hidden w-full md:block lg:hidden"
+        />
+        <video
+          src="https://images-tv.adobe.com/mpcv3/7457/58124ba3-dcd4-42d2-8214-282d8698d4fa_1684383053.1920x1080at3000_h264.mp4"
+          autoplay
+          muted
+          class="absolute left-[50%] top-[50%] hidden h-screen min-w-max translate-x-[-50%] translate-y-[-50%] lg:block"
+        ></video>
+
+        <div
+          class="left-[36%] top-[50%] mx-auto w-[88%] py-10 sm:px-2 lg:absolute lg:mx-0 lg:w-auto lg:translate-x-[-50%] lg:translate-y-[-50%] lg:text-white"
+        >
+          <h1 class="text-5xl font-ADOBEBOLD">Dream Bigger.</h1>
+          <p class="w-4/5 my-5 text-lg leading-6 lg:w-3/5">
+            Step into the future with the most amazing Photoshop release ever,
+            now with Adobe Firefly generative AI tools. You have to try it to
+            believe it.
+          </p>
+          <button
+            class="mb-4 block rounded-[100vmax] bg-[#1473E6] px-3 py-1 text-sm text-white duration-100 hover:opacity-90 lg:mr-3 lg:inline lg:px-6 lg:py-3 lg:font-ADOBEBOLD lg:text-lg"
+          >
+            <a href="" class="text-white"> Explore the new Photoshop </a>
+          </button>
+          <a
+            href=""
+            class="font-ADOBEBOLD text-lg text-[#1473E6] duration-300 hover:underline lg:text-white lg:hover:text-gray-400 lg:hover:no-underline"
+            >Learn more about Firefly</a
+          >
+        </div>
+      </div>
+      <div
+        class="backdrop fixed left-0 top-0 -z-0 hidden h-screen w-full bg-[rgba(0,0,0,.5)]"
+      ></div>
+    </main>
+
+    <section
+      class="mx-auto my-4 grid w-[88%] grid-cols-1 gap-10 lg:w-[95%] lg:grid-cols-3"
+    >
+      <div class="relative">
+        <img src="img/grid-1.jpg" alt="" class="w-full sm:hidden" />
+        <img
+          src="tab-img/grid-1.jpg"
+          alt=""
+          class="hidden w-full sm:block lg:hidden"
+        />
+        <img src="pc-img/grid-1.jpg" alt="" class="hidden w-full lg:block" />
+        <div class="absolute left-6 top-8">
+          <h2 class="pb-3 font-ADOBEBOLD text-[1.1rem]">NEW IN PHOTOSHOP</h2>
+          <h1 class="text-2xl font-ADOBEBOLD">Welcome to Generation AI.</h1>
+          <p class="py-2 font-semibold">
+            Play on the cutting edge of creativity using simple text prompts and
+            Generative Fill (beta).
+          </p>
+          <a href="" class="text-sm font-bold hover:underline">Get started</a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="img/grid-2.jpg" class="w-full sm:hidden" alt="" />
+        <img
+          src="tab-img/grid-2.jpg"
+          alt=""
+          class="hidden w-full sm:block lg:hidden"
+        />
+        <img src="pc-img/grid-2.jpg" alt="" class="hidden w-full lg:block" />
+        <div class="absolute left-6 top-8">
+          <h1 class="text-2xl font-ADOBEBOLD">Adobe Express</h1>
+          <p class="py-2 font-semibold">
+            Quickly and easily make standout content. No credit card required.
+          </p>
+          <a href="" class="text-sm font-bold hover:underline"
+            >Get Adobe Express free</a
+          >
+        </div>
+      </div>
+
+      <div class="bg-[#9797fc] px-6 py-8 font-ADOBEBOLD text-sm">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-1">
+          <div>
+            <h2 class="mb-5 text-lg border-b border-black">
+              Explore our creative apps
+            </h2>
+            <a href="" class="block mb-4 hover:underline"
+              >Creative Cloud All Apps free trial</a
+            >
+            <a href="" class="block mb-4 hover:underline"
+              >See plans and pricing</a
+            >
+          </div>
+          <div>
+            <h2 class="mb-5 text-lg border-b border-black">
+              See what you can do
+            </h2>
+            <a href="" class="block mb-4 hover:underline">Photography</a>
+            <a href="" class="block mb-4 hover:underline">Graphic design</a>
+            <a href="" class="block mb-4 hover:underline">Video</a>
+            <a href="" class="block mb-4 hover:underline">Illustration</a>
+            <a href="" class="block mb-4 hover:underline">UI and UX</a>
+            <a href="" class="block mb-4 hover:underline">3D and AR</a>
+            <a href="" class="block hover:underline">Social Media</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative lg:col-span-2">
+        <img src="img/grid-3.jpg" class="w-full sm:hidden" alt="" />
+        <img
+          src="tab-img/grid-3.jpg"
+          alt=""
+          class="hidden w-full sm:block lg:hidden"
+        />
+        <img src="pc-img/grid-3.jpg" alt="" class="hidden w-full lg:block" />
+        <div class="absolute left-6 top-8">
+          <h1 class="text-2xl font-ADOBEBOLD">Adobe Express</h1>
+          <p class="py-2 font-semibold">
+            Quickly and easily make standout content. No credit card required.
+          </p>
+          <a href="" class="text-sm font-bold hover:underline"
+            >Get Adobe Express free</a
+          >
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="relative">
+          <img
+            src="img/grid-4-bg.jpg"
+            alt=""
+            class="w-full sm:h-[500px] lg:hidden lg:min-h-[500px]"
+          />
+
+          <img
+            src="img/grid-4-bg.jpg"
+            alt=""
+            class="hidden w-full sm:min-h-[500px] lg:block"
+          />
+
+          <img
+            src="img/fourth-grid.png"
+            alt=""
+            class="absolute bottom-0 right-2 w-[18rem] sm:w-[25rem]"
+          />
+        </div>
+        <div class="absolute left-6 top-8">
+          <h1 class="text-2xl font-ADOBEBOLD">Get it done with Acrobat.</h1>
+          <p class="py-2 font-semibold">
+            Edit, share, and e-sign all of your PDFs — all in one place.
+          </p>
+          <a href="" class="text-sm font-bold hover:underline"
+            >Start free trial</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="relative lg:py-10">
+      <img src="img/section-1.jpg" alt="" class="w-full mt-10 sm:hidden" />
+      <img
+        src="tab-img/section-1.jpg"
+        alt=""
+        class="hidden w-full mt-10 sm:block lg:hidden"
+      />
+      <img src="pc-img/section-1.jpg" alt="" class="hidden w-full lg:block" />
+      <div
+        class="left-[5%] top-[50%] mx-auto w-[88%] py-10 sm:px-2 lg:absolute lg:w-[35%] lg:translate-y-[-50%]"
+      >
+        <h1 class="text-5xl font-ADOBEBOLD">
+          Work smarter with Adobe Acrobat Sign.
+        </h1>
+        <p class="w-4/5 my-5 text-lg leading-7 lg:w-3/5">
+          Collect signatures and sign documents faster than ever, so you can
+          spend more time doing what you do best.
+        </p>
+        <button
+          class="mb-4 block rounded-[100vmax] bg-[#1473E6] px-3 py-2 text-sm text-white duration-300 hover:opacity-80 lg:mr-2 lg:inline-block"
+        >
+          <a href="" class="text-white">See all plans</a>
+        </button>
+        <a href="" class="font-ADOBEBOLD text-sm text-[#1473E6] hover:underline"
+          >View More</a
+        >
+      </div>
+    </section>
+
+    <section
+      class="mx-auto my-4 grid w-[88%] grid-cols-1 gap-10 lg:w-[95%] lg:grid-cols-3"
+    >
+      <div class="relative">
+        <div class="relative">
+          <img src="img/grid-4-bg.jpg" alt="" class="w-full sm:h-[500px]" />
+          <img
+            src="img/fifth-grid.png"
+            alt=""
+            class="absolute bottom-0 right-2 w-[16rem] sm:w-[25rem]"
+          />
+        </div>
+        <div class="absolute left-6 top-8">
+          <h1 class="mb-4 text-2xl font-ADOBEBOLD">
+            ACROBAT READER MOBILE APP
+          </h1>
+          <h1 class="text-lg font-ADOBEBOLD">Work now works wherever.</h1>
+          <p class="py-2 font-semibold">
+            With the Acrobat Reader mobile app, your smartphone is now a serious
+            business tool.
+          </p>
+          <a href="" class="text-sm font-bold hover:underline">Learn more</a>
+        </div>
+      </div>
+
+      <div class="relative h-[500px] w-full bg-[#eb1000] text-white">
+        <img
+          src="img/sixth-grid.png"
+          alt=""
+          class="absolute bottom-0 right-2 z-50 w-[25rem]"
+        />
+
+        <div class="absolute left-6 top-8">
+          <h1 class="mb-4 text-2xl font-ADOBEBOLD">
+            ADOBE DOCUMENT CLOUD FOR BUSINESS
+          </h1>
+          <h1 class="text-lg font-ADOBEBOLD">PDFs keep work flowing.</h1>
+          <p class="py-2 font-semibold">
+            Unite remote teams with Adobe Document Cloud for business.
+          </p>
+          <a href="" class="text-sm font-bold text-white hover:underline"
+            >Learn more</a
+          >
+        </div>
+      </div>
+
+      <div class="bg-[#4b1640] px-6 py-8 font-ADOBEBOLD text-sm text-white">
+        <div class="grid md:grid-cols-2 lg:grid-cols-1">
+          <div>
+            <h2 class="mb-5 text-lg border-b border-white">Explore Acrobat</h2>
+            <a href="" class="block mb-4 text-white hover:underline"
+              >What is Acrobat?</a
+            >
+            <a href="" class="block mb-4 text-white hover:underline"
+              >See plans and pricing</a
+            >
+          </div>
+
+          <div class="text-white">
+            <h2 class="mb-5 text-lg border-b border-white">
+              Try our online PDF tools
+            </h2>
+            <a href="" class="block mb-4 text-white hover:underline"
+              >Word to PDF
+            </a>
+            <a href="" class="block mb-4 text-white hover:underline"
+              >PowerPoint to PDF
+            </a>
+            <a href="" class="block mb-4 text-white hover:underline"
+              >Excel to PDF</a
+            >
+            <a href="" class="block mb-4 text-white hover:underline"
+              >JPG to PDF</a
+            >
+            <a href="" class="block mb-4 text-white hover:underline"
+              >Compress PDF</a
+            >
+            <a href="" class="block mb-4 text-white hover:underline"
+              >Fill and Sign</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lg:relative lg:my-10">
+      <img src="img/section-2.jpg" alt="" class="w-full mt-10 sm:hidden" />
+      <img
+        src="tab-img/section-2.jpg"
+        alt=""
+        class="hidden w-full mt-10 sm:block lg:hidden"
+      />
+      <img src="pc-img/section-2.jpg" alt="" class="hidden w-full lg:block" />
+      <div
+        class="left-[5%] top-[50%] mx-auto w-[88%] py-10 sm:px-2 lg:absolute lg:w-[50%] lg:translate-y-[-50%] lg:text-white"
+      >
+        <h1 class="w-4/5 mt-4 mb-6 text-xl font-ADOBEBOLD">
+          ADOBE EXPERIENCE CLOUD
+        </h1>
+        <h1 class="w-4/5 text-5xl font-ADOBEBOLD">
+          Fuel greater customer experiences.
+        </h1>
+        <p class="w-4/5 my-5 text-lg leading-7 lg:w-3/5">
+          Give customers what they need, when and how they want it.
+        </p>
+        <button
+          class="mb-4 block cursor-pointer rounded-[100vmax] bg-[#1473E6] px-3 py-2 text-sm text-white duration-300 hover:opacity-80 lg:border-2 lg:bg-transparent lg:font-ADOBEBOLD lg:hover:bg-white lg:hover:text-black"
+        >
+          Learn More
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="mx-auto my-4 mb-10 grid w-[88%] grid-cols-1 gap-10 lg:w-[95%] lg:grid-cols-3"
+    >
+      <div class="relative text-white">
+        <img src="img/grid-7.jpg" alt="" class="w-full sm:hidden" />
+        <img
+          src="tab-img/grid-7.jpg"
+          alt=""
+          class="hidden w-full sm:block lg:hidden"
+        />
+        <img src="pc-img/grid-7.jpg" alt="" class="hidden w-full lg:block" />
+        <div class="absolute left-6 top-8">
+          <h2 class="pb-3 font-ADOBEBOLD text-[1.1rem]">
+            ADOBE EXPERIENCE CLOUD
+          </h2>
+          <h1 class="text-2xl font-ADOBEBOLD">End to end. And back again.</h1>
+          <p class="py-2 font-semibold">
+            Experience Cloud products cover your range of customer experience
+            needs.
+          </p>
+          <a href="" class="text-sm font-bold text-white hover:underline"
+            >See products</a
+          >
+        </div>
+      </div>
+
+      <div class="relative text-white">
+        <img src="img/grid-8.jpg" alt="" class="w-full sm:hidden" />
+        <img
+          src="tab-img/grid-8.jpg"
+          alt=""
+          class="hidden w-full sm:block lg:hidden"
+        />
+        <img src="pc-img/grid-8.jpg" alt="" class="hidden w-full lg:block" />
+        <div class="absolute left-6 top-8">
+          <h2 class="pb-3 font-ADOBEBOLD text-[1.1rem]">
+            ADOBE 2023 DIGITAL TRENDS
+          </h2>
+          <h1 class="text-2xl font-ADOBEBOLD">Today’s trends in focus.</h1>
+          <p class="py-2 font-semibold">
+            See how brands that embrace creativity pull ahead in the digital
+            economy.
+          </p>
+          <a href="" class="text-sm font-bold text-white hover:underline"
+            >Get the report</a
+          >
+        </div>
+      </div>
+
+      <div class="bg-[#66cccc] px-6 py-8 font-ADOBEBOLD text-sm">
+        <h2 class="mb-5 text-lg border-b border-black">
+          Explore business solutions
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-1">
+          <div>
+            <a href="" class="block mb-4 hover:underline"
+              >Data insights and audiences</a
+            >
+            <a href="" class="block mb-4 hover:underline">Content management</a>
+            <a href="" class="block mb-4 hover:underline">Commerce</a>
+            <a href="" class="block mb-4 hover:underline">Customer journeys</a>
+          </div>
+
+          <div>
+            <a href="" class="block mb-4 hover:underline">B2B marketing</a>
+            <a href="" class="block mb-4 hover:underline"
+              >Digital enrollment and onboarding</a
+            >
+            <a href="" class="block mb-4 hover:underline">Marketing workflow</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mx-auto bg-[#fafafa] px-4 py-8 text-gray-700 lg:w-[95%]">
+      <div class="grid py-2 text-sm lg:grid-cols-5 lg:gap-4">
+        <div
+          class="py-4 border-t border-black underlink-1 underlinks lg:border-0"
+        >
+          <div class="flex items-center justify-between px-2 lg:block lg:px-0">
+            <h1 class="font-ADOBEBOLD text-[1.1rem] lg:mb-3">Shop for</h1>
+            <i
+              class="duration-75 fa-solid fa-chevron-down first-arrowed lg:hidden"
+            ></i>
+          </div>
+          <div class="flex-col hidden gap-2 px-2 underpara-1 lg:flex lg:px-0">
+            <a href="" class="mt-4 duration-200 hover:text-gray-500 lg:mt-0"
+              >Creative Cloud</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500">Photoshop</a>
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Adobe Express</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500">Photography</a>
+            <a href="" class="duration-200 hover:text-gray-500">Premiere Pro</a>
+            <a href="" class="duration-200 hover:text-gray-500">Adobe Stock</a>
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Elements Family</a
+            >
+          </div>
+        </div>
+        <div
+          class="py-4 border-t border-black underlink-2 underlinks lg:border-0"
+        >
+          <div class="flex items-center justify-between px-2 lg:block lg:px-0">
+            <h1 class="font-ADOBEBOLD text-[1.1rem] lg:mb-3">For Business</h1>
+            <i
+              class="duration-75 fa-solid fa-chevron-down second-arrowed lg:hidden"
+            ></i>
+          </div>
+          <div class="flex-col hidden gap-2 px-2 underpara-2 lg:flex lg:px-0">
+            <a href="" class="mt-4 duration-200 hover:text-gray-500 lg:mt-0"
+              >Creative Cloud for teams</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Creative Cloud for enterprise</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Document Cloud for business</a
+            >
+          </div>
+        </div>
+        <div
+          class="py-4 border-t border-black underlink-3 underlinks lg:border-0"
+        >
+          <div class="flex items-center justify-between px-2 lg:block lg:px-0">
+            <h1 class="font-ADOBEBOLD text-[1.1rem] lg:mb-3">
+              Experience Cloud
+            </h1>
+            <i
+              class="duration-75 fa-solid fa-chevron-down third-arrowed lg:hidden"
+            ></i>
+          </div>
+          <div class="flex-col hidden gap-2 px-2 underpara-3 lg:flex lg:px-0">
+            <a href="" class="mt-4 duration-200 hover:text-gray-500 lg:mt-0"
+              >What is Experience Cloud?</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500">Analytics</a>
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Experience Manager</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500">Commerce</a>
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Marketo Engage</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500">Workfront</a>
+          </div>
+        </div>
+        <div
+          class="py-4 border-t border-black underlink-4 underlinks lg:border-0"
+        >
+          <div class="flex items-center justify-between px-2 lg:block lg:px-0">
+            <h1 class="font-ADOBEBOLD text-[1.1rem] lg:mb-3">Support</h1>
+            <i
+              class="duration-75 fa-solid fa-chevron-down fourth-arrowed lg:hidden"
+            ></i>
+          </div>
+          <div class="flex-col hidden gap-2 px-2 underpara-4 lg:flex lg:px-0">
+            <a href="" class="mt-4 duration-200 hover:text-gray-500 lg:mt-0"
+              >Download and Install</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500">Help Center</a>
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Adobe Support Community</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Enterprise Support</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Genuine Software</a
+            >
+          </div>
+        </div>
+        <div
+          class="py-4 border-t border-b border-black underlink-5 underlinks lg:border-0"
+        >
+          <div class="flex items-center justify-between px-2 lg:block lg:px-0">
+            <h1 class="font-ADOBEBOLD text-[1.1rem] lg:mb-3">Adobe</h1>
+            <i
+              class="duration-75 fa-solid fa-chevron-down fifth-arrowed lg:hidden"
+            ></i>
+          </div>
+          <div class="flex-col hidden gap-2 px-2 underpara-5 lg:flex lg:px-0">
+            <a href="" class="mt-4 duration-200 hover:text-gray-500 lg:mt-0"
+              >About</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500">Careers</a>
+            <a href="" class="duration-200 hover:text-gray-500">Newsroom</a>
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Corporate responsibility</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Investor Relations</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500">Supply Chain</a>
+            <a href="" class="duration-200 hover:text-gray-500">Trust Center</a>
+            <a href="" class="duration-200 hover:text-gray-500">Events</a>
+            <a href="" class="duration-200 hover:text-gray-500"
+              >Diversity and Inclusion</a
+            >
+            <a href="" class="duration-200 hover:text-gray-500">Integrity</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="items-center justify-center hidden py-2 my-4 text-xs border-t border-b sm:flex"
+      >
+        <div class="mr-6 text-sm font-ADOBEBOLD">Featured Products</div>
+        <div class="flex items-center gap-2 mr-4 cursor-pointer">
+          <img src="pc-img/acrobat.svg" alt="" class="w-6 cursor-pointer" />
+          Adobe Acrobat Reader
+        </div>
+        <div class="flex items-center gap-2 mr-4 cursor-pointer">
+          <img src="pc-img/express.svg" alt="" class="w-6 cursor-pointer" />
+          Adobe Express
+        </div>
+        <div class="flex items-center gap-2 mr-4 cursor-pointer">
+          <img src="pc-img/photoshop.svg" alt="" class="w-6 cursor-pointer" />
+          Photoshop
+        </div>
+        <div class="flex items-center gap-2 cursor-pointer">
+          <img src="pc-img/illustrator.svg" alt="" class="w-6 cursor-pointer" />
+          Illustrator
+        </div>
+      </div>
+
+      <div
+        class="flex flex-wrap items-center justify-between pt-4 space-y-4 text-xs lg:space-y-0"
+      >
+        <div class="flex items-center gap-8">
+          <div class="flex items-center gap-[.2rem] md:gap-1">
+            <div class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-globe"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+                />
+              </svg>
+            </div>
+            <h1>Change Region</h1>
+            <i
+              class="duration-75 fa-solid fa-chevron-down downed-arrow-disabled"
+            ></i>
+          </div>
+          <div class="flex items-center gap-4 md:gap-6">
+            <img
+              src="pc-img/social-icon-facebook.svg"
+              alt=""
+              class="w-5 cursor-pointer"
+            />
+            <img
+              src="pc-img/social-icon-twitter.svg"
+              alt=""
+              class="w-5 cursor-pointer"
+            />
+            <img
+              src="pc-img/social-icon-linkedin.svg"
+              alt=""
+              class="w-5 cursor-pointer"
+            />
+            <img
+              src="pc-img/social-icon-instagram.svg"
+              alt=""
+              class="w-5 cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="order-1 text-center md:order-0 lg:text-right">
+          Copyright © 2023 Adobe. All rights reserved.
+        </div>
+        <div
+          class="flex flex-wrap items-center gap-2 divide-x divide-gray-900 text-[.6rem] md:text-xs"
+        >
+          <a href="" class="duration-200 hover:text-gray-500">Privacy</a>
+          <a href="" class="pl-2 duration-200 hover:text-gray-500"
+            >Terms of use</a
+          >
+          <a href="" class="pl-2 duration-200 hover:text-gray-500"
+            >Cookie preferences</a
+          >
+          <a href="" class="pl-2 duration-200 hover:text-gray-500"
+            >Do not sell my personal information</a
+          >
+          <div class="flex items-center">
+            <img src="pc-img/svg-adchoices.svg" alt="" class="w-8 h-4" />
+            <a href=""> Ad Choices </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
